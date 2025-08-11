@@ -5,7 +5,7 @@ import io
 import os
 
 # Configure Google Gemini API Key
-GOOGLE_API_KEY = "AIzaSyCs59emAN1Z9hUSUoFt59G6_P3qfWl8Mhs"
+GOOGLE_API_KEY = "API KEY"  #Replace with your Gemini API key
 genai.configure(api_key=GOOGLE_API_KEY)
 
 # Resize image to reduce token size
@@ -86,4 +86,5 @@ response = model.generate_content(
 
 # Step 7: Display the response
 print("\n🧠 Gemini AI Response:")
+
 print(response.text)
